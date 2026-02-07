@@ -8,6 +8,7 @@ from smolagents import CodeAgent, InferenceClientModel
 # Laod environment variables from .env file
 load_dotenv()
 
+# Get Hugging Face API key from environment variable
 hf_api_key = os.getenv("HF_TOKEN")
 
 # Initialize a model (using Higging FAce Inference API)

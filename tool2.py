@@ -14,7 +14,7 @@ hf_api_key = os.getenv("HF_TOKEN")
 # Initialize a model (using Higging FAce Inference API)
 model = InferenceClientModel(token=hf_api_key)
 
-# Create an agent with no tools
+# Create an agent with DuckDuckGoSearch tool (Agent Initialization)
 agent = CodeAgent(tools=[DuckDuckGoSearchTool()], model = model)
 
 # Run the agent with a prompt
